@@ -4,6 +4,17 @@ At Kati Thanda–Lake Eyre North, floodwater reaches different parts of the lake
 
 The toolbox extracts water surface elevation (WSE, metres) from the SWOT Level 2 High Rate Raster product. Each station is defined by its longitude and latitude. The output records the contributing pixels and the observations excluded by each filter. Belt Bay and Madigan Gulf are included as examples. Their application in the observatory is described in the [KTLE Observatory repository](https://github.com/tfaraon/ktle-observatory).
 
+## Search and download observations at a site
+
+Start from the repository root:
+
+```bash
+python -m pip install -e '.[download]' jupyterlab matplotlib
+jupyter lab SWOT_site_download.ipynb
+```
+
+Enter the site coordinates and an inclusive UTC date range. The notebook searches NASA CMR and lists the Raster granules covering the point. Select files by row index and set `download = True` to retrieve them with an Earthdata account. The default example uses the 100 m Version D product at Belt Bay in January 2026. Change the directory to reuse an existing flat NetCDF archive. Files are checked against their catalogue size and, when provided, checksum. Rerun with an extended period to update the series. Each selected granule has its own row in the output, including overlapping tiles from the same pass. A catalogue match establishes footprint coverage. The extraction supplies the retained pixel count, quality status and local elevation. Results are written under `output/` as CSV tables and, when accepted observations exist, a PDF plot.
+
 ## Installation and first run
 
 From the repository root, create a Python environment and install the package. The small example creates two synthetic NetCDF time series at 100 and 250 m, a gauge record and a LakeSP-style CSV. It runs offline and takes a few seconds. Use a new directory for each generated example.

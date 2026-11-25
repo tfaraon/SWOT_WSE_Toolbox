@@ -196,7 +196,7 @@ def extract_granule(item, *, lon, lat, width_m, radius, levels, quality_mode, mi
 def station(directory, lon, lat, *, width_m=None, radius=0, levels=(0, 1),
             quality_mode="pixel", min_fraction=0., bounds=None, iqr="flag",
             iqr_factor=1.5, resolution=None, orbit=None, tile=None, workers=1,
-            estimator="mean", optical=None, detail_dates=(), historical_pool=False, iqr_fit_period=None, duplicate_policy="preferred"):
+            estimator="mean", optical=None, detail_dates=(), historical_pool=False, iqr_fit_period=None, duplicate_policy="preferred", filenames=None):
     """Return a row per input granule. Dates are UTC granule start times."""
     if estimator not in ("mean", "median"):
         raise ValueError("estimator must be mean or median")
@@ -221,7 +221,8 @@ def station(directory, lon, lat, *, width_m=None, radius=0, levels=(0, 1),
     if duplicate_policy not in ("preferred", "error"):
         raise ValueError("duplicate_policy must be preferred or error")
     items = []
-    for path in sorted(Path(directory).rglob("SWOT_L2_HR_Raster_*.nc")):
+    paths = Path(directory).rglob("SWOT_L2_HR_Raster_*.nc") if filenames is None else map(Path, filenames)
+    for path in sorted(paths):
         match = PRODUCT.match(path.name)
         if not match:
             raise ValueError(f"Unrecognised Raster granule name: {path.name}")
