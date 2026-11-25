@@ -78,6 +78,7 @@ def download_selected(selection):
     import earthaccess
 
     report = selection.copy()
+    report["local_state"] = report["local_state"].astype("string")
     report["download_error"] = ""
     authenticated = False
     for index, row in report.iterrows():
