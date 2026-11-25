@@ -1,0 +1,23 @@
+{
+  "mode": "field",
+  "source": "/Volumes/tfaraon_PhD/Data/SWOT/download",
+  "toolbox": "0.3.2",
+  "module": "/Users/tfaraon/Documents/PhD_Python/SWOT_WSE_Toolbox/SWOT_toolbox/stations.py",
+  "start_inclusive": "2025-01-01",
+  "end_exclusive": "2026-01-01",
+  "figures": [
+    "fig01_synthetic",
+    "figS01_observatory_2025",
+    "fig02_station_levels",
+    "fig03_sensitivity_100m",
+    "fig03_sensitivity_250m",
+    "fig04_footprint"
+  ],
+  "skipped": {
+    "fig05_reference": "Aucune référence appariée fournie (jauge ou LakeSP)."
+  },
+  "map_site": "Belt Bay",
+  "map_resolution": 100,
+  "map_dates_requested": [],
+  "config_sha256": "9522b27376b97f5ea69a0bc86ba1c2bc2572c508833c60ea1dc33c00b8237ed3"
+}

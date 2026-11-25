@@ -1,0 +1,59 @@
+{
+  "granules": "../data/rasters",
+  "output": "../output",
+  "raster_datum": "EGM2008",
+  "sites": [
+    {
+      "name": "Belt Bay",
+      "lon": 137.028098,
+      "lat": -28.893022,
+      "bounds_m": [
+        -16,
+        6
+      ]
+    },
+    {
+      "name": "Madigan Gulf",
+      "lon": 137.56,
+      "lat": -28.893,
+      "bounds_m": [
+        -16,
+        6
+      ]
+    }
+  ],
+  "methods": [
+    {
+      "name": "Historical parallel settings",
+      "radius": 6,
+      "levels": [
+        0,
+        1,
+        2
+      ],
+      "quality_mode": "centre",
+      "iqr": "reject",
+      "historical_pool": true,
+      "bounds": [
+        -16,
+        6
+      ]
+    },
+    {
+      "name": "Historical sequential settings",
+      "radius": 6,
+      "levels": [
+        0,
+        1,
+        2
+      ],
+      "quality_mode": "centre",
+      "iqr": "reject",
+      "historical_pool": true,
+      "bounds": [
+        -15,
+        6
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+._*
+.idea/
+.venv/
+*.egg-info/
+build/
+dist/
+example-run/
+data/
+output/
+*.nc
+.env*
+.netrc
+*.zip

@@ -1,0 +1,65 @@
+{
+  "granules": "/Volumes/tfaraon_PhD/Data/SWOT/download",
+  "output": "/Users/tfaraon/Documents/PhD_Python/SWOT_WSE_Toolbox/publication_figures/field_20261125T010503079956Z/tables",
+  "raster_datum": "EGM2008",
+  "methods": [
+    {
+      "name": "Point",
+      "radius": 0
+    },
+    {
+      "name": "500 m",
+      "width_m": 500
+    },
+    {
+      "name": "1300 m",
+      "width_m": 1300
+    },
+    {
+      "name": "Centre QC",
+      "width_m": 1300,
+      "quality_mode": "centre"
+    },
+    {
+      "name": "IQR rejection",
+      "width_m": 1300,
+      "iqr": "reject"
+    }
+  ],
+  "sites": [
+    {
+      "name": "Belt Bay",
+      "lon": 137.028098,
+      "lat": -28.893022,
+      "bounds_m": [
+        -16,
+        6
+      ],
+      "periods": [
+        {
+          "name": "figure period",
+          "start": "2025-01-01",
+          "end": "2026-01-01"
+        }
+      ],
+      "detail_dates": []
+    },
+    {
+      "name": "Madigan Gulf",
+      "lon": 137.56,
+      "lat": -28.893,
+      "bounds_m": [
+        -16,
+        6
+      ],
+      "periods": [
+        {
+          "name": "figure period",
+          "start": "2025-01-01",
+          "end": "2026-01-01"
+        }
+      ],
+      "detail_dates": []
+    }
+  ]
+}

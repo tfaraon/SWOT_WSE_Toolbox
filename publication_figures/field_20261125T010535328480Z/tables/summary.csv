@@ -1,0 +1,41 @@
+site,method,resolution,phase,reference,eligible_passes,usable_passes,usable_fraction
+Belt Bay,Point,100,all,coverage,98,69,0.7040816326530612
+Belt Bay,Point,100,figure period,coverage,22,18,0.8181818181818182
+Belt Bay,Point,250,all,coverage,98,69,0.7040816326530612
+Belt Bay,Point,250,figure period,coverage,21,17,0.8095238095238095
+Belt Bay,500 m,100,all,coverage,98,69,0.7040816326530612
+Belt Bay,500 m,100,figure period,coverage,22,18,0.8181818181818182
+Belt Bay,500 m,250,all,coverage,98,70,0.7142857142857143
+Belt Bay,500 m,250,figure period,coverage,21,18,0.8571428571428571
+Belt Bay,1300 m,100,all,coverage,98,71,0.7244897959183674
+Belt Bay,1300 m,100,figure period,coverage,22,20,0.9090909090909091
+Belt Bay,1300 m,250,all,coverage,98,71,0.7244897959183674
+Belt Bay,1300 m,250,figure period,coverage,21,19,0.9047619047619048
+Belt Bay,Centre QC,100,all,coverage,98,69,0.7040816326530612
+Belt Bay,Centre QC,100,figure period,coverage,22,18,0.8181818181818182
+Belt Bay,Centre QC,250,all,coverage,98,69,0.7040816326530612
+Belt Bay,Centre QC,250,figure period,coverage,21,17,0.8095238095238095
+Belt Bay,IQR rejection,100,all,coverage,98,69,0.7040816326530612
+Belt Bay,IQR rejection,100,figure period,coverage,22,18,0.8181818181818182
+Belt Bay,IQR rejection,250,all,coverage,98,69,0.7040816326530612
+Belt Bay,IQR rejection,250,figure period,coverage,21,17,0.8095238095238095
+Madigan Gulf,Point,100,all,coverage,82,29,0.35365853658536583
+Madigan Gulf,Point,100,figure period,coverage,22,10,0.45454545454545453
+Madigan Gulf,Point,250,all,coverage,83,38,0.4578313253012048
+Madigan Gulf,Point,250,figure period,coverage,21,13,0.6190476190476191
+Madigan Gulf,500 m,100,all,coverage,82,45,0.5487804878048781
+Madigan Gulf,500 m,100,figure period,coverage,22,15,0.6818181818181818
+Madigan Gulf,500 m,250,all,coverage,83,55,0.6626506024096386
+Madigan Gulf,500 m,250,figure period,coverage,21,18,0.8571428571428571
+Madigan Gulf,1300 m,100,all,coverage,82,62,0.7560975609756098
+Madigan Gulf,1300 m,100,figure period,coverage,22,20,0.9090909090909091
+Madigan Gulf,1300 m,250,all,coverage,83,61,0.7349397590361446
+Madigan Gulf,1300 m,250,figure period,coverage,21,20,0.9523809523809523
+Madigan Gulf,Centre QC,100,all,coverage,82,29,0.35365853658536583
+Madigan Gulf,Centre QC,100,figure period,coverage,22,10,0.45454545454545453
+Madigan Gulf,Centre QC,250,all,coverage,83,38,0.4578313253012048
+Madigan Gulf,Centre QC,250,figure period,coverage,21,13,0.6190476190476191
+Madigan Gulf,IQR rejection,100,all,coverage,82,62,0.7560975609756098
+Madigan Gulf,IQR rejection,100,figure period,coverage,22,20,0.9090909090909091
+Madigan Gulf,IQR rejection,250,all,coverage,83,61,0.7349397590361446
+Madigan Gulf,IQR rejection,250,figure period,coverage,21,20,0.9523809523809523
